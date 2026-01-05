@@ -4,3 +4,256 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+
+/* global styles */
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #465b52;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .3s ease;
+}
+
+body{
+    background: #fff;
+    width: 100%;
+}
+
+/* header section */
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 80px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .3);
+    /* background: #dcdcdc; */
+}
+
+.logo a img{
+    width: 90px;
+    height: 90px;
+}
+
+.navgation .list-menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    font-size: 21px;
+     color: #088178;
+    padding-left: 140px;
+    font-weight: 600;
+}
+
+.list-menu .list-item a{
+    text-decoration: none;
+    color: #1a1a1a;
+    position: relative;
+    transition: .3s ease;
+    font-weight: 700;
+}
+
+.list-menu a.active,
+.list-menu .list-item a:hover{
+    color: #088178;
+    transition: .3s ease;
+}
+
+.list-menu a.active:hover::after,
+.list-menu .list-item a:hover::after{
+    content: '';
+    width: 30%;
+    height: 3px;
+    position: absolute;
+    background: #088178;
+    bottom: -8px;
+    left: 1px;
+    transition: .3s ease;
+    animation: expand 1s linear;
+}
+
+@keyframes expand {
+    30%, 100%{
+        transition: .3s ease;
+        width: 100%;
+    }
+}
+
+
+
+/* home page */
+
+
+/* hero section */
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: url(..//images/worker4.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 40px 80px;
+}
+
+#hero h4{
+    padding-bottom: 30px;
+}
+
+#hero h1{
+    color: #088178;
+    font-size: 66px;
+    padding-bottom: 30px;
+}
+
+#hero h2{
+    font-size: 56px;
+    line-height: 54px;
+    color: #222;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+#hero p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #465b52;
+    padding-bottom: 20px;
+} 
+
+button{
+    padding: 15px 80px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: url(..//images/banner-bg.png);
+    background-position: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 13px;
+}
+
+
+/* feature section */
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fe-box{
+    text-align: center;
+    border: 1px solid #cce7d0;
+    padding: 18px 12px;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, .3);
+    border-radius: 13px;
+}
+
+.fe-box h6{
+    margin-top: 20px;
+    margin-bottom: 18px;
+    padding: 10px 15px;
+    background: #088178;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.fe-box:nth-child(2) h6{
+    background: #d968be;
+}
+
+.fe-box:nth-child(3) h6{
+    background: #79e461;
+}
+
+.fe-box:nth-child(4) h6{
+    background: #e06a6a;
+}
+
+.fe-box:nth-child(5) h6{
+    background: #8068d9;
+}
+
+.fe-box:nth-child(6) h6{
+    background: #d9a668;
+}
+
+.fe-box img{
+    width: 180px;
+    height: 180px;
+}
+
+#products{
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+}
+
+#products .head p{
+    margin: 26px 0;
+}
+
+#products .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pro-container .desc img{
+    width: 250px;
+    height: 250px;
+}
