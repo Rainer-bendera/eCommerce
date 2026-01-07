@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* global styles */
 h1{
     font-size: 50px;
@@ -36,6 +38,7 @@ p{
 
 .section-p1{
     padding: 40px 80px;
+    overflow: hidden;
 }
 
 .section-m1{
@@ -67,14 +70,29 @@ header{
     z-index: 999;
 }
 
+footer{
+    overflow: hidden;
+}
+
 nav{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 80px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, .3);
-    /* background: #dcdcdc; */
+    overflow: hidden;
+}
+
+nav #mobile {
+    display: none;
+}
+
+.list-menu #closeMenu i{
+    display: none;
+}
+
+nav .navgation i.open {
+    display: none;
 }
 
 .logo a img{
@@ -89,8 +107,10 @@ nav{
     list-style: none;
     font-size: 21px;
      color: #088178;
-    padding-left: 140px;
+    padding-left: 145px;
     font-weight: 600;
+
+
 }
 
 .list-menu .list-item a{
@@ -108,6 +128,7 @@ nav{
 }
 
 .list-menu a.active:hover::after,
+.list-menu a.active::after,
 .list-menu .list-item a:hover::after{
     content: '';
     width: 30%;
@@ -137,7 +158,7 @@ nav{
     width: 100%;
     height: 100vh;
     background: url(..//images/worker4.jpg);
-    background-position: center;
+    background-position: top 25% right 0;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -145,9 +166,11 @@ nav{
     align-items: flex-end;
     justify-content: center;
     padding: 40px 80px;
+    /* overflow: hidden; */
 }
 
 #hero h4{
+    color: #222;
     padding-bottom: 30px;
 }
 
@@ -186,12 +209,17 @@ button{
 }
 
 
+
+
+
 /* feature section */
 #feature{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+    /* overflow: hidden; */
 }
 
 .fe-box{
@@ -237,9 +265,9 @@ button{
 }
 
 #products{
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
-    width: 100%;
+    /* overflow: hidden; */
 }
 
 #products .head p{
@@ -253,7 +281,673 @@ button{
     flex-wrap: wrap;
 }
 
+.pro-container .desc{
+    position: relative;
+    border: 1px solid #cce7d0;
+    margin-bottom: 30px;
+    padding: 14px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .3);
+    border-radius: 13px;
+    text-align: start;
+    transition: .4s ease-in-out;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.pro-container .desc:hover{
+    margin: 10px 0px;
+    transform: scale(1.1);
+}
+
+.pro-container .desc p, h5{
+    margin: 16px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pro-container .desc p{
+        white-space: nowrap;
+    }
+
+.pro-container .desc  h5{
+    margin: 16px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #088178;
+}
+
+.pro-container .desc .stars i{
+    color: #c6ad09;
+}
+
+.pro-container .desc .cart i{
+    color: #088178;
+    font-size: 24px;
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    background: #e3dbdb;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #cce7d0;
+}
+
+
+
 .pro-container .desc img{
-    width: 250px;
-    height: 250px;
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+}
+
+#banner{
+    background-image: url(..//images/cta-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    line-height: 90px;
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+#banner p{
+    color: #ffb006;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#banner h2{
+    color: #fff;
+    line-height: 80px;
+}
+
+#banner h2 span{
+    color: #ffb006;
+}
+
+#banner button{
+    background: #fff;
+    color: #222;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+
+#sm-banner{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+/* overflow: hidden; */
+}
+
+#sm-banner .banner-container{
+    /* overflow: hidden; */
+    min-width: 700px;
+    width: 100%;
+    background-image: url(..//images/p09.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    height: 50vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    flex-basis: 48%;
+
+}
+
+#sm-banner .banner-container h3, h4, p{
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+#sm-banner .banner-container h4{
+    margin: 14px 0;
+}
+
+#sm-banner .banner-container button{
+    background: transparent;
+    border: 1px solid #088178;
+    transition: .3s ease-in-out;
+}
+
+#sm-banner .banner-container:hover button{
+    background: #088178;
+    
+}
+
+#sm-banner .banner-container:nth-child(2){
+    background-image: url(..//images/p22.webp);
+}
+
+#sm-banner .banner-container:nth-child(2) p{
+    color: #3e3d3d;
+    font-size: 22px;
+}
+
+
+#banner2 .b2-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    line-height: 80px;
+    color: #fff;
+}
+
+#banner2 .b2-container h2{
+    color: #fff;
+    white-space: nowrap;
+}
+
+#banner2 .b2-container .continer1{
+    width: 100%;
+    height: 30vh;
+    background-image: url(..//images/p07.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: #fb4e04;
+    padding: 0 20px;
+}
+
+#banner2 .b2-container .continer2{
+    width: 100%;
+    height: 30vh;
+    background-image: url(..//images/p7.webp);
+     background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: #fb4e04;
+    padding: 0 20px;
+}
+
+#banner2 .b2-container .continer3{
+    width: 100%;
+    height: 30vh;
+    background-image: url(..//images/p01.webp);
+     background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: #fb4e04;
+    padding: 0 20px;
+}
+
+#newsLetter{
+    background: #031c4e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 90px;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+   /* overflow: hidden; */
+}
+
+#newsLetter h3{
+    color: #fff;
+    font-size: 22px;
+}
+
+#newsLetter p{
+    color: #918989;
+    font-size: 22px;
+    margin-top: -30px;
+}
+
+#newsLetter p span{
+    color: #c6ad09;
+}
+
+#newsLetter .form{
+    width: 40%;
+    display: flex;
+    align-items: end;
+}
+
+#newsLetter .form input{
+    padding: 20px 10px;
+    flex-basis: 70%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+#newsLetter .form button{
+    background: #088178;
+    padding: 20px 40px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+
+/* footer styling */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+}
+
+footer .footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer .col a{
+    text-decoration: none;
+    margin-bottom: 25px;
+    color: #222;
+    font-size: 21px;
+    transition: .3s ease;
+}
+
+footer .col a:hover{
+    color: #088178;
+}
+
+footer .col h5{
+    margin-bottom: 40px;
+}
+
+
+footer .contact img{
+    width: 90px;
+    height: 90px;
+}
+
+footer .install{
+    margin-right: -100px;
+}
+
+footer .install img{
+    width: 100px;
+    height: 100px;
+}
+
+footer .install .apps{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    color: #088178;
+    cursor: pointer;
+}
+
+footer .install .apps i{
+    font-size: 100px;
+}
+
+footer .install .apps i:hover{
+    color: #222;
+}
+
+footer .install p.two{
+    margin-top: 35px;
+}
+
+footer .col p{
+    color: #222;
+    font-weight: 500;
+}
+
+footer .social i{
+    font-size: 21px;
+    margin-right: 12px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+footer .social i:hover{
+    color: #088178;
+}
+
+footer .gateway img{
+    margin-top: 16px;
+    width: 30%;
+    height: 80px;
+    object-fit: contain;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
+    transition: .3s ease;
+}
+
+footer .gateway img:hover{
+    border: 1px solid #088178;
+    border-radius: 12px;
+    outline: none;
+}
+
+footer .gateway{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+footer .copyright p{
+    margin-top: 16px;
+    text-align: center;
+    color: #222;
+}
+
+
+/* media queries */
+@media screen and (max-width:799px) {
+   .navgation .list-menu {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    background: #dcdcdc;
+    top: 0;
+    right: -300px;
+    padding: 80px 0 10px 40px;
+    width: 300px;
+    height: 100vh;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+}
+
+    nav #mobile {
+        display: inline-flex;
+        white-space: nowrap;
+        font-size: 22px;
+        color: #222;
+    }
+
+    nav #mobile a{
+        color: #222;
+    }
+
+    .list-menu #closeMenu i{
+        position: absolute;
+        display: block;
+        top: 25px;
+        left: 50px;
+        font-size: 20px;
+    }
+
+    .list-menu.expand{
+        right: 0px;
+    }
+
+    #products .pro-container {
+        gap: 35px;
+   justify-content: center; 
+}
+
+    #hero {
+    background-position: top 30% left 30%;
+    background-size: cover;
+    padding: 40px 20px;
+    /* overflow: hidden; */
+}
+
+    #hero h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+    #hero h2 {
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 10px;
+    
+}
+
+    button {
+    padding: 10px 60px;
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+    #feature {
+   display: flex;
+   gap: 20px;
+   padding: 20px 40px;
+    }
+
+    #products .pro-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+    #products {
+    padding: 40px 0px;
+}
+
+    .pro-container .desc {
+    width: 300px;
+    padding: 14px;
+    margin-left: 2;
+}
+
+    .pro-container .desc img {
+    object-fit: cover;
+    width: 260px;
+    height: 260px;
+}
+
+    #banner {
+    line-height: 75px;
+
+}
+
+    #banner {
+    height: 25vh;
+    width: 100%;
+}
+
+    #sm-banner .banner-container h3, h4, p {
+    margin-bottom: -15px;
+}
+
+    #banner h2 {
+    font-size: 20px;
+    line-height: 10px;
+}
+
+    #banner p {
+    color: #ffb006;
+    font-size: 16px;
+    
+}
+
+    #sm-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+     #sm-banner .banner-container{
+        border-radius: 12px;
+     }
+
+    #sm-banner .banner-container h3, h4, p {
+    margin-bottom: 10px;
+}
+
+    #sm-banner .banner-container:nth-child(2) {
+    background-image: url(..//images/p22.webp);
+    color: #222;
+}
+
+    .section-p1 {
+    padding: 40px 30px;
+    overflow: hidden;
+}
+
+    #banner2 .b2-container .continer1 {
+    width: 30%;
+    height: 30vh;
+    padding: 10px;
+
+}
+
+    #banner2 .b2-container h2 {
+        font-size: 19px;
+    white-space: wrap;
+}
+
+    .pro-container .desc p, h5 {
+        margin: -10px 0;
+        font-size: 14px;
+}
+
+
+    #banner2 .b2-container .continer2 {
+    width: 30%;
+    height: 30vh;
+    padding: 0 0px 0 5px;
+}
+
+    #banner2 .b2-container .continer3 {
+    width: 30%;
+    height: 30vh;
+    padding: 0 0px 0 5px;
+}
+
+    #newsLetter .form{
+        width: 80%;
+}
+
+    #newsLetter .form input {
+    flex-basis: 100%;
+    font-size: 20px;
+}
+
+    #newsLetter .form button {
+    padding: 22px 40px;
+    
+}
+
+    footer .col {
+    margin-top: 20px;
+}
+
+    footer .col h5 {
+        font-size: 19px;
+        margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
+
+@media screen and (max-width:477px) {
+    nav {
+    padding: 16px 40px;
+    }
+
+    .navgation .list-menu {
+    width: 200px;
+    font-size: 17px;
+}
+
+    #hero h4 {
+        font-size: 17px;
+    padding-bottom: 20px;
+}
+
+    #hero h2 {
+    font-size: 30px;
+    line-height: 20px;
+}
+
+    #hero h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+    #hero p {
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+    .fe-box {
+    width: 45%;
+}
+
+    .fe-box{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);
+    
+}
+
+
+    #feature {
+    display: flex;
+    gap: 10px;
+}
+
+    .fe-box img {
+    width: 80px;
+    height: 80px;
+}
+
+    .fe-box h6 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+    h1 {
+    font-size: 35px;
+    margin-bottom: -30px;
+    white-space: nowrap;
+}
+
+    #products .head p {
+        font-size: 15px;
+        color: #222;
+    margin: 26px 0;
+}
+
+    #sm-banner .banner-container {
+    /* overflow: hidden; */
+    min-width: 600px;
+    width: 50%;
+    padding: 20px;
+    height: 40vh;
+    flex-basis: 20%;
+}
+
+.section-p1{
+    padding: 20px 10px;
+}
+
+
 }
