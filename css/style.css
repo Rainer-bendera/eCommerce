@@ -271,6 +271,7 @@ button{
 }
 
 #products .head p{
+    color: #222;
     margin: 26px 0;
 }
 
@@ -938,7 +939,7 @@ footer .copyright p{
 
     #sm-banner .banner-container {
     /* overflow: hidden; */
-    min-width: 600px;
+    min-width: 400px;
     width: 50%;
     padding: 20px;
     height: 40vh;
@@ -949,5 +950,74 @@ footer .copyright p{
     padding: 20px 10px;
 }
 
+.pro-container .desc {
+    width: 600px;
+    padding: 14px;
+    margin-left: 2;
+}
 
+    .pro-container .desc img {
+    object-fit: cover;
+    width: 350px;
+    height: 300px;
+}
+
+    #banner2 .b2-container .continer1 {
+    width: 36%;
+    height: 30vh;
+    padding: 10px;
+}
+
+     #banner2 .b2-container {
+        padding: 5px;
+     }
+
+    #banner2 .b2-container h2 {
+    font-size: 10px;
+}
+
+    .pro-container .desc p, h5 {
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+    #newsLetter {
+    line-height: 10px;
+    gap: 20px;
+    padding: 20px  40px;
+    height: 30vh;
+}
+
+    #newsLetter h3 {
+    font-size: 18px;
+}
+
+    #newsLetter p {
+   margin-top: 20px;
+    font-size: 15px;
+    line-height: 30px;
+    
+}
+
+    #newsLetter .form input {
+    flex-basis: 70%;
+    font-size: 17px;
+}
+
+    #newsLetter .form button {
+    padding: 20px 30px;
+}
+
+    footer .col h5 {
+    font-size: 18px;
+}
+
+    footer .col p {
+    font-size: 17px;
+}
+
+    footer .col a {
+    font-size: 17px;
+    
+}
 }

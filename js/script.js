@@ -7,3 +7,12 @@ bar.addEventListener("click", () =>{
 });
 
 close.addEventListener("click", () => bar.click());
+
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "80px",
+    duration: 2050,
+    reset: true
+})
+
+sr.reveal("#hero, #featuer, #products, #banner, #sm-banner, #banner2, #newsletter, footer", {delay:400});
