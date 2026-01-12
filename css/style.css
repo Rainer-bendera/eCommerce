@@ -153,6 +153,11 @@ nav .navgation i.open {
 /* home page */
 
 
+.pro-container .desc p {
+    white-space: nowrap;
+    color: #222;
+}
+
 /* hero section */
 #hero{
     width: 100%;
@@ -265,7 +270,7 @@ button{
 }
 
 #products{
-    min-height: 100vh;
+    min-height: 80vh;
     text-align: center;
     /* overflow: hidden; */
 }
@@ -664,6 +669,112 @@ footer .copyright p{
 }
 
 
+
+/* shop page */
+#page-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(..//images/banner-bg.png);
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#page-header h1{
+    color: #fff;
+    line-height: 150px;
+    font-weight: 800;
+}
+
+
+
+/* single product */
+.sp-container{
+    display: flex;
+    gap: 60px;
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    height: auto;
+}
+
+
+.sp-container .sImg{
+    display: flex;
+    flex-direction: column;
+    width: 150%;
+}
+
+
+.sp-container .sImg .featured{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    width: 29%;
+    height: 26%;
+    
+}
+
+
+.sp-container .sImg .featured img{
+    width:95%;
+    height: 95%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.sp-container .sImg img{
+    width: 100%;
+    height: 47vh;
+    object-fit: cover;
+    background-position: center;
+    background-size: contain;
+}
+
+.sp-container .singP-desc h4{
+  margin-top: -60px;
+}
+
+.sp-container .singP-desc h3, h2{
+    margin: 30px 0;
+}
+
+.sp-container .singP-desc p{
+    color: #222;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.singP-desc select{
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.singP-desc input{
+    padding: 17px 10px;
+    width: 7%;
+    font-size: 18px;
+    margin: 17px 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.singP-desc button{
+    background: #088178;
+    border-radius: 0;
+    padding: 18px 20px;
+    margin-left: 10px;
+}
+
+
 /* media queries */
 @media screen and (max-width:799px) {
    .navgation .list-menu {
@@ -828,7 +939,10 @@ footer .copyright p{
     .pro-container .desc p, h5 {
         margin: -10px 0;
         font-size: 14px;
+        
 }
+
+    
 
 
     #banner2 .b2-container .continer2 {
