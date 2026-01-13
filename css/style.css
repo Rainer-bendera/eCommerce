@@ -61,6 +61,12 @@ body{
     width: 100%;
 }
 
+body.expand{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px) #222;
+}
+
 /* header section */
 
 header{
@@ -689,6 +695,28 @@ footer .copyright p{
     font-weight: 800;
 }
 
+#pagnation{
+    padding: 80px 0;
+}
+
+
+
+.pag-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.pag-container button{
+    background: #088178;
+    color: #fff;
+    padding: 18px 26px;
+    font-size: 22px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, .02);
+}
+
 
 
 /* single product */
@@ -775,8 +803,119 @@ footer .copyright p{
 }
 
 
+
+
+
+
+/* blog page */
+#page-header.blog-header{
+    background: url(..//images/h2.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+#blog{
+    display: flex;
+    flex-direction: column;
+}
+
+#blog .blog-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 140px 140px 0 140px;
+}
+
+#blog .blog-img{
+    width: 50%;
+}
+
+
+#blog .blog-img img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    background-position: center;
+}
+
+#blog .blog-details{
+    width: 50%;
+    padding: 0 50px;
+}
+
+#blog .blog-details h3{
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#blog .blog-details p{
+    color: #5d5c5c;
+    line-height: 50px;
+}
+
+#blog .blog-details a{
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    color: #000;
+}
+
+#blog .blog-details a::after{
+    position: absolute;
+    content: '';
+    top: 15px;
+    right: -120px;
+    width: 100px;
+    height: 3px;
+    background: #000;
+}
+
+#blog .blog-details a:hover::after{
+    background: #088178;
+}
+
+#blog .blog-details a:hover{
+    color: #088178;
+}
+
+#blog h1{
+    position: absolute;
+    top: 98px;
+    left: 120px;
+    font-size: 80px;
+    font-style: 700;
+    z-index: -9;
+    color: #cce7d0;
+}
+
+
+
 /* media queries */
 @media screen and (max-width:799px) {
+
+    nav {
+    padding: 16px 40px;
+    
+}
+
+    body.expand header::before{
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, .02);
+    }
+
+
+
    .navgation .list-menu {
     position: relative;
     display: flex;
@@ -789,7 +928,7 @@ footer .copyright p{
     padding: 80px 0 10px 40px;
     width: 300px;
     height: 100vh;
-    font-size: 18px;
+    font-size: 22px;
     transition: .3s ease-in-out;
 }
 
@@ -859,7 +998,7 @@ footer .copyright p{
 }
 
     #products {
-    padding: 40px 0px;
+    padding: 25px 0px;
 }
 
     .pro-container .desc {
@@ -980,9 +1119,123 @@ footer .copyright p{
         margin-top: 20px;
     margin-bottom: 20px;
 }
+
+    /* single product page */
+    .sp-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px 0 0;
+    width: 96%;
+}
+
+    .sp-container .sImg .featured{
+        margin-right: 50px;
+        margin-left: -10px;
+    }
+
+    .sp-container .sImg .featured img {
+    width: 71%;
+    height: 73%;
+}
+
+    .sp-container .sImg img {
+    padding-right: 20px;
+    width: 80%;
+    height: 47vh;
+    
+}
+
+    .sp-container .singP-desc h3, h2 {
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+    .singP-desc select {
+    padding: 20px 18px;
+    font-size: 17px;
+    margin: 20px 0;
+    
+}
+
+    .singP-desc input {
+    padding: 17px 10px;
+    width: 20%;
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+    .singP-desc button {
+    font-size: 20px;
+    padding: 20px 25px;
+   
+}
+
+    .singP-desc h5{
+        margin: 20px 0;
+        font-size: 24px;
+    }
+
+    .sp-container .singP-desc p {
+    font-size: 25px;
+    line-height: 34px;
+}
+
+    .sp-container .sImg img {
+    padding-right: 0px;
+    width: 90%;
+}
+
+
+
+/* blog page */
+#blog .blog-box { 
+    margin-bottom: 40px;
+    padding: 40px 40px 0 40px;
+}
+
+#blog .blog-details h3 {
+    margin-bottom: 15px;
+    margin-top: -66px;
+    font-size: 24px;
+}
+
+#blog .blog-details p {
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+
+#blog .blog-details {
+    width: 50%;
+    padding: 0 30px;
+}
+
+#blog .blog-details a {
+    font-size: 19px;
+    margin-top: 23px;
+}
+
+#blog h1 {
+    top: -8px;
+    left: 40px;
+    
+}
+
+
 }
 
 @media screen and (max-width:477px) {
+
+   body.expand header::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, .02);
+   }
+
     nav {
     padding: 16px 40px;
     }
@@ -1091,8 +1344,10 @@ footer .copyright p{
 }
 
     .pro-container .desc p, h5 {
-    font-size: 10px;
-    white-space: nowrap;
+        margin-top: 20px;
+        font-size: 15px;
+        white-space: nowrap;
+        font-weight: 600;
 }
 
     #newsLetter {
@@ -1133,5 +1388,91 @@ footer .copyright p{
     footer .col a {
     font-size: 17px;
     
+}
+
+/* single product */
+
+    .sp-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+    .sp-container .sImg {
+    width: 115%;
+}
+
+    .sp-container .singP-desc h3, h2 {
+    margin: 15px 0;
+}
+
+    h2 {
+    font-size: 32px;
+    line-height: 30px;
+    
+}
+
+    .singP-desc select {
+    padding: 10px 5px;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 18px 0;}
+
+    .singP-desc input {
+    padding: 10px 5px;
+    width: 20%;
+    font-size: 13px;
+    margin: 17px 5px;
+}
+   .singP-desc button {
+    padding: 10px 13px;
+}
+
+    .singP-desc h5{
+        margin: 20px 0;
+    }
+
+    .sp-container .singP-desc p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* blog page */
+#blog .blog-box {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+}
+
+#blog .blog-img img {
+    width: 200%;
+    
+}
+
+#blog .blog-details h3 {
+    margin-top: 30px;
+    font-size: 19px;
+    white-space: nowrap;
+}
+
+#blog .blog-details {
+    width: 100%;
+    padding: 0 30px;
+}
+
+#blog h1 {
+    top: -20px;
+    left: 20px;
+    font-size: 40px;
+}
+
+#blog .blog-box {
+    margin: 30px 0;
+}
+
+#blog .blog-details a {
+    font-size: 16px;
+    font-weight: 700;
 }
 }

@@ -1,10 +1,12 @@
 const bar = document.getElementById("bar");
 const menu = document.getElementById("menu")
 const close = document.getElementById("closeMenu");
+const body = document.querySelector("body");
 
 
 bar.addEventListener("click", () =>{
     menu.classList.toggle("expand");
+    document.body.classList.toggle("expand");
 });
 
 close.addEventListener("click", () => bar.click());
@@ -17,7 +19,7 @@ var other = document.getElementById("featured");
 for(let i = 0; i < small.length; i++){
     small[i].onclick = function(){
         main.src = small[i].src;
-    }
+    };
 }
 
 
