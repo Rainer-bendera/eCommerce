@@ -31,5 +31,5 @@ const sr = ScrollReveal({
     reset: true
 })
 
-sr.reveal("#hero, #featuer, #products, #banner, #sm-banner, #banner2, #newsletter, footer", {delay:400});
+sr.reveal("#hero, #featuer, #products,#blog, #banner, #sm-banner, #banner2, #newsletter, footer", {delay:400});
 sr.reveal("#page-header, #single-pro", {delay:100});
