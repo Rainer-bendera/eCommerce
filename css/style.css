@@ -958,6 +958,147 @@ footer .copyright p{
 }
 
 
+/* contact poage */
+#page-header.contact{
+    background: url(..//images/contact-bg.jpg);
+}
+
+#contacts{
+    display: flex;
+    align-items: center;
+}
+
+
+.details{
+    width: 50%;
+}
+
+.details p{
+    color: #3d3c3c;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.details span{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.details h2{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.details h4{
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.specific-de li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.specific-de li i{
+    font-size: 20px;
+}
+
+.map{
+    width: 50%;
+    padding-right: 20px;
+}
+
+.map img{
+    width: 100%;
+    height: 400px;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    margin: 20px;
+}
+
+
+.form-details{
+    width: 50%;
+}
+
+.form-details form{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.form-details form span{
+    font-weight: 600;
+}
+
+.form-details form h2{
+    font-size: 30px;
+}
+
+.form-details form input{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+    outline: none;
+}
+
+.form-details form textarea{
+    width: 100%;
+    padding: 12px 10px;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 20px;
+}
+
+.form-details form button{
+    background: #088178;
+    padding: 15px 30px;
+}
+
+
+.folk-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
+.person{
+    display: flex;
+}
+
+.person img{
+    width: 100px ;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.person p{
+    color: #222;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.person p strong{
+    font-family: 800;
+}
+
+
+
 
 /* media queries */
 @media screen and (max-width:799px) {
