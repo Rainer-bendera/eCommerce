@@ -111,7 +111,7 @@ nav .navgation i.open {
     align-items: center;
     gap: 60px;
     list-style: none;
-    font-size: 21px;
+    font-size: 16px;
      color: #088178;
     padding-left: 145px;
     font-weight: 600;
@@ -1076,6 +1076,7 @@ footer .copyright p{
 
 .person{
     display: flex;
+    margin-top: 30px;
 }
 
 .person img{
@@ -1088,7 +1089,7 @@ footer .copyright p{
 
 .person p{
     color: #222;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     margin-left: 30px;
 }
@@ -1446,6 +1447,29 @@ footer .copyright p{
 
 
 
+/* contact page */
+
+
+.map {
+    margin-left: 20px;
+    padding-right: 0px;
+}
+
+
+.details h2 {
+    font-size: 22px;
+}
+
+.folk-section {
+    margin-left: 30px;
+    align-items: flex-start;
+}
+
+
+
+
+
+
 
 }
 
@@ -1718,4 +1742,35 @@ footer .copyright p{
     width: 100%;
     margin-right: 30px;
 }
+
+/* contact page */
+#contacts {
+    flex-direction: column;
+}
+
+
+.details {
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+
+#contact-box {
+    flex-direction: column;
+}
+
+.form-details {
+    width: 100%;
+}
+
+.folk-section {
+    width: 100%;
+}
+
 }
