@@ -581,8 +581,9 @@ footer .col a{
     text-decoration: none;
     margin-bottom: 25px;
     color: #222;
-    font-size: 21px;
+    font-size: 20px;
     transition: .3s ease;
+    margin-left: 30px;
 }
 
 footer .col a:hover{
@@ -591,6 +592,7 @@ footer .col a:hover{
 
 footer .col h5{
     margin-bottom: 40px;
+    margin-left: 30px;
 }
 
 
@@ -631,6 +633,8 @@ footer .install p.two{
 footer .col p{
     color: #222;
     font-weight: 500;
+    font-size: 18px;
+    margin-left: 30px;
 }
 
 footer .social i{
@@ -1097,6 +1101,111 @@ footer .copyright p{
 .person p strong{
     font-family: 800;
 }
+
+
+/* cart page */
+
+#cart-box table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+
+#cart-box table td img{
+    width: 70px;
+}
+
+#cart-box table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart-box table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+
+#cart-box table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart-box table td:nth-child(4),
+#cart-box table td:nth-child(5),
+#cart-box table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table thead td{
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid #e2e2e2;
+    border-left: none;
+    border-right: none;
+    padding: 14px 0;
+}
+
+table tbody td{
+    padding: 15px 0;
+    font-size: 19px;
+}
+
+table tbody input{
+    width: 70px;
+    padding: 5px 10px 5px 4px;
+}
+
+#add-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+#add-cart .apply-cupoun{
+    width: 50%;
+}
+
+#add-cart .apply-cupoun h4{
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#add-cart .apply-cupoun input{
+    width: 70%;
+    padding: 13px 10px;
+    border: 1px solid #e2e2e2;
+    outline: none;
+    font-size: 20px;
+}
+
+#add-cart .apply-cupoun button,
+#add-cart .cart-totals button{
+    background: #088178;
+    padding: 16px 40px;
+    margin-top: 0;
+}
+
+#add-cart .cart-totals{
+    width: 50%;
+    border: 1px solid #e1e1e1;
+    padding: 30px;
+}
+
+#add-cart .cart-totals table{
+    margin-bottom: 30px;
+}
+
+/* #add-cart .cart-totals table h4{
+    font-weight: 800;
+
+} */
 
 
 

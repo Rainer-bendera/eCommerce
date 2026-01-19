@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
     <link rel="stylesheet" href="..//css/style.css">
+    <link rel="stylesheet" href="..//bootsrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="..//assets/css/all.min.css">
     <script src="..//js/script.js" defer></script>
     <script src="..//js/scrollreveal.min.js"></script>
+
 </head>
 <body>
     <header > 
@@ -21,8 +23,8 @@
                     <li class="list-item"><a href="shop.html">Shop</a></li>
                     <li class="list-item"><a href="blog.html">Blog</a></li>
                     <li class="list-item"><a href="about.html" >About</a></li>
-                    <li class="list-item"><a href="contact.html" class="active">Contact</a></li>
-                    <li class="list-item"><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li class="list-item"><a href="contact.html" >Contact</a></li>
+                    <li class="list-item"><a href="cart.html" class="active"><i class="fas fa-shopping-bag"></i></a></li>
                     <a href="#" id="closeMenu"><i  class="fas fa-times"></i></a>
                 </ul>
             </div>
@@ -38,96 +40,81 @@
         <p>LEAVE A MESSAGE, We love to hear from you</p> 
     </section>
 
-    <section id="contacts" class="section-p1">
-        <div class="details">
-            <span>GET IN TOUCH</span>
-            <h2>Visit one of our agency locations or contact us today</h2>
-            <h4>Head Office</h4>
+    <section id="cart-box" class="section-p1">
+        <table class="table-striped" width="100%">
+            <thead>
+                <tr>
+                    <td>REMOVE</td>
+                    <td>IMAGE</td>
+                    <td>PRODUCTS</td>
+                    <td>PRICE</td>
+                    <td>QUANTITY</td>
+                    <td>SUBTOTAL</td>
+                </tr>
+            </thead>
 
-            <div class="specific-de">
-                <li>
-                    <i class="fas fa-map"></i>
-                    <p>56 Glassford Street Glassgow G1 1UL New York</p>
-                </li>
+            <tbody>
+                <tr class="py-3">
+                    <td><i class="far fa-times-circle"></i></td>
+                    <td><img src="..//images/jacket1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut Jacket</td>
+                    <td>$118.90</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.90</td>
 
-                <li>
-                    <i class="fas fa-envelope"></i>
-                    <p>rainerelinawinga6@gmail.com</p>
-                </li>
+                </tr>
 
-                <li>
-                    <i class="fas fa-phone"></i>
-                    <p>+255 617 501 863</p>
-                </li>
+                <tr>
+                    <td><i class="far fa-times-circle"></i></td>
+                    <td><img src="..//images/tshirt-img.png" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirt</td>
+                    <td>$118.90</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.90</td>
 
-                <li>
-                    <i class="fas fa-clock"></i>
-                    <p>Monday to Saturday: 9:00am to 16:00pm</p>
-                </li>
-            </div>
-        </div>
+                </tr>
 
-        <div class="map">
-           <img src="..//images/camera.jpg" alt="">
-        </div>
 
+                <tr>
+                    <td><i class="far fa-times-circle"></i></td>
+                    <td><img src="..//images/gown.png" alt=""></td>
+                    <td>Cartoon Astronaut Woman Gown</td>
+                    <td>$118.90</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.90</td>
+
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="contact-box" class="section-p1">
-        <div class="form-details">
-            <form action="">
-                <span>LEAVE A MESSAGE</span>
-                <h2>We love to hear from You</h2>
-
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="E-mail">
-                <input type="text" placeholder="subject">
-                <textarea cols="30" rows="10"></textarea>
-                <button>Submit</button>
-            </form>
+    <section id="add-cart" class="section-p1">
+        <div class="apply-cupoun">
+            <h4>Apply Coupons</h4>
+            <input type="text" placeholder="Enter Your Coupons">
+            <button>Apply</button>
         </div>
 
-        <div class="folk-section">
-            <div class="person">
-                <img src="..//images/worker4.jpg" alt="">
-            <p><strong>John Doe</strong> <br> Senior Marketing Manager <br> Phone: +000 123 000 77 88
-                 <br> Email: rainerelinawinga6@gmail.com
-            </p>
-            </div>
+        <div class="cart-totals">
+            <table class="table table-striped">
+                <h4><strong>Cart Totals</strong></h4>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
 
-            <div class="person">
-                <img src="..//images/worker3.jpg" alt="">
-            <p><strong>John Doe</strong> <br> Senior Marketing Manager <br> Phone: +000 123 000 77 88
-                 <br> Email: rainerelinawinga6@gmail.com
-            </p>
-            </div>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
 
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 335</strong></td>
+                </tr>
+            </table>
 
-            <div class="person">
-                <img src="..//images/worker2.jpg" alt="">
-            <p><strong>John Doe</strong> <br> Senior Marketing Manager <br> Phone: +000 123 000 77 88
-                 <br> Email: rainerelinawinga6@gmail.com
-            </p>
-            </div>
-
-            <div class="person">
-                <img src="..//images/worker1.jpg" alt="">
-            <p><strong>John Doe</strong> <br> Senior Marketing Manager <br> Phone: +000 123 000 77 88
-                 <br> Email: rainerelinawinga6@gmail.com
-            </p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="newsLetter" class="section-p1">
-        <div class="left">
-            <h3>Sign Up For newsletters</h3>
-            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
-        </div>
-
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button>Sign Up</button>
+            <button>Proceed to checkout</button>
         </div>
     </section>
 
