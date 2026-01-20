@@ -1208,6 +1208,10 @@ table tbody input{
 } */
 
 
+#cart-box{
+    overflow-x: auto;
+}
+
 
 
 /* media queries */
@@ -1425,6 +1429,31 @@ table tbody input{
     
 }
 
+
+/* footer section */
+footer .col a {
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+
+footer .install .apps {
+    gap: 20px;
+ 
+}
+
+footer .install .apps i {
+    font-size: 100px;
+}
+
+footer .col p {
+    white-space: nowrap;
+}
+
+footer .install {
+    margin-right: 20px;
+}
+
     footer .col {
     margin-top: 20px;
 }
@@ -1573,6 +1602,24 @@ table tbody input{
     margin-left: 30px;
     align-items: flex-start;
 }
+
+
+
+/* cart page */
+#add-cart .apply-cupoun input {
+    width: 70%;
+}
+
+#add-cart .apply-cupoun button, #add-cart .cart-totals button {
+    padding: 14px 20px;
+    text-align: center;
+    
+}
+
+#add-cart .cart-totals table {
+   width: 100%;
+}
+
 
 
 
@@ -1880,6 +1927,31 @@ table tbody input{
 
 .folk-section {
     width: 100%;
+}
+
+
+/* cart page */
+#add-cart {
+    flex-direction: column;
+}
+
+#add-cart .apply-cupoun {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#add-cart .cart-totals {
+    width: 100%;
+    }
+
+    table tbody td {
+    border: 1px solid #e1e1e1;
+    padding-left: 20px;
+}
+
+footer .col p {
+    margin-left: 5px;
+    font-size: 15px;
 }
 
 }
